@@ -1,0 +1,57 @@
+body{
+    background-color: #D7d0c8;
+    color: #34353f;
+    font-family: 'Lobster', cursive;
+
+
+}
+
+nav{
+    background-color: #34353f;
+    margin-bottom: 20px ;
+    font-family: 'Lobster', cursive;
+
+}
+
+.grey-text{
+    color: #34353f;
+}
+
+.center{
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.card-content{
+    word-wrap: break-word;
+    color: #34353f;
+
+}
+
+.card-title{
+    margin-top: 50px;
+    color: #34353f;
+
+}
+
+.content{
+    color: #34353f;
+    width: 800px;
+    margin: auto;
+}
+
+.card{
+    margin-left: 10px;
+    justify-content: center;
+
+
+}
+.collection{
+    color: #34353f;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
