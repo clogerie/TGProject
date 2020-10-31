@@ -18,18 +18,26 @@
   <!-- nav with home and about -->
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Travel God</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+        <a href="#" class="brand-logo left lobster">Travel God</a>
+        <ul id="nav-mobile" class="right">
+            <li>
+                <div href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i>
+                </div>
+            </li>
+        </ul>
     </div>
-  </nav>
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
+</nav>
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class="background">
+            </div>
+        </div>
+    </li>
+    <li><a class = "lobster" href="index.html">Home</a></li>
+    <li><a class = "lobster" href="about.html">About</a></li>
+</ul>
+
   <div class = "content">
 
     <h2 class= "center-text">Welcome to Travel God</h2>
@@ -70,6 +78,12 @@
             </p>
             <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
           </li>
+            <li class="collection-item avatar">
+              <span class="name">Anita Danyshchk</span>
+              <p>Dananiuta@gmail.com
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+            </li>
           <li class="collection-item avatar">
             <span class="name">Isha Khosla</span>
             <p>ishakhosla131@gmail.com
@@ -84,7 +98,7 @@
           </li>
           <li class="collection-item avatar">
             <span class="name">Julian Sgarzi</span>
-            <p>Email:japsgarzi@gmail.com
+            <p>japsgarzi@gmail.com
             </p>
             <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
           </li>
@@ -92,12 +106,24 @@
       </div>
 
   </div>
-    <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-      $(document).ready(function(){
-          $(".sidenav").sidenav();
-      })
-  </script> 
+        var options = {
+            edge: "left",
+            draggable: true,
+            inDuration: 250,
+            outDuration: 200,
+            onOpenStart: null,
+            onOpenEnd: null,
+            onCloseStart: null,
+            onCloseEnd: null,
+            preventScrolling: true
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+    </script>
   </div>  
 </body>
 
